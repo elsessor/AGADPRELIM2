@@ -55,7 +55,6 @@ function App() {
       if (['POST', 'PUT', 'DELETE', 'PATCH'].includes(requestData.method)) {
         const bodyData = {}
         
-        // Only include fields that have values
         if (requestData.username) bodyData.username = requestData.username
         if (requestData.password) bodyData.password = requestData.password
         if (requestData.age) bodyData.age = parseInt(requestData.age) || requestData.age
@@ -65,7 +64,6 @@ function App() {
         if (requestData.type) bodyData.type = requestData.type
         if (requestData.role) bodyData.role = requestData.role
         
-        // Only send body if there's actual data
         if (Object.keys(bodyData).length > 0) {
           requestOptions.body = JSON.stringify(bodyData)
         }
@@ -84,7 +82,6 @@ function App() {
         responseData = responseText
       }
 
-      // Log the request details for debugging
       console.log('Request URL:', requestData.url)
       console.log('Request Method:', requestData.method)
       console.log('Request Body:', requestOptions.body)
