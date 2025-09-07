@@ -239,7 +239,7 @@ function App() {
                   </div>
 
                   <div className="form-field">
-                    <label htmlFor="ownerId">Owner ID</label>
+                    <label htmlFor="ownerId">Owner ID (Input when needed)</label>
                     <input
                       type="text"
                       id="ownerId"
@@ -256,7 +256,7 @@ function App() {
                   </div>
 
                   <div className="form-field">
-                    <label htmlFor="name">Pet Name</label>
+                    <label htmlFor="name">Pet Name (Input when needed)</label>
                     <input
                       type="text"
                       id="name"
@@ -273,7 +273,7 @@ function App() {
                   </div>
 
                   <div className="form-field">
-                    <label htmlFor="type">Pet Type</label>
+                    <label htmlFor="type">Pet Type (Input when needed)</label>
                     <input
                       type="text"
                       id="type"
@@ -290,7 +290,7 @@ function App() {
                   </div>
 
                   <div className="form-field">
-                    <label htmlFor="role">Role</label>
+                    <label htmlFor="role">Role (Input when needed)</label>
                     <input
                       type="text"
                       id="role"
